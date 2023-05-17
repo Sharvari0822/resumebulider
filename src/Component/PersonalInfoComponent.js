@@ -35,8 +35,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const PersonalInfoComponent = (props) => {
   const [loading, setLoading] = useState(false);
   const [imgSnackbar, setImgSnackbar] = useState(false);
-  const [vertical, setVertical] = useState("top");
-  const [horizontal, setHorizontal] = useState("center");
+  const [vertical] = useState("top");
+  const [horizontal] = useState("center");
 
   const {
     register,
@@ -47,7 +47,7 @@ const PersonalInfoComponent = (props) => {
   const [img, setImg] = useState(
     props.personalInfo.profileImg.length ? props.personalInfo.profileImg : ""
   );
-  const [sotreImage, setSotreImage] = useState([]);
+  const [setSotreImage] = useState([]);
 
   const [open, setOpen] = useState(false);
 

@@ -49,12 +49,12 @@ const Template2 = (props) => {
       <TemplateHeader
         primaryColor={"white"}
         secondaryColor={"white"}
-        bgColor={"#9B536F"}
+        bgColor={"Gray"}
         personalInfo={personalinfo}
         workExperience={workexperience}
       />
       <Container>
-        <TemplateHeading color={"#9B536F"} title={"Professional Experience"} />
+        <TemplateHeading color={"Gray"} title={"Professional Experience"} />
         <ul style={{ marginBottom: 10 }}>
           {workexperience.map((experience, index) => {
             return (
@@ -65,9 +65,9 @@ const Template2 = (props) => {
             );
           })}
         </ul>
-        <TemplateHeading color={"#9B536F"} title={"Education"} />
+        <TemplateHeading color={"Gray"} title={"Education"} />
         <TemplateEducationComponent education={educationinfo} />
-        <TemplateHeading color={"#9B536F"} title={"Key Skills"} />
+        <TemplateHeading color={"Gray"} title={"Key Skills"} />
         <ul style={{ marginBottom: 10 }}>
           {skills.map((skill, index) => {
             return <TemplateKeySkillComponent key={index} skill={skill} />;

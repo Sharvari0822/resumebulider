@@ -8,7 +8,7 @@ import { data } from "../Data/data";
 import TemplateEducationComponent from "../Component/TemplateEducationComponent";
 import TemplateKeySkillComponent from "../Component/TemplateKeySkillComponent";
 
-const Template1 = (props) => {
+const Template4 = (props) => {
   // console.log(
   //   props.personalinfo,
   //   props.workexperience,
@@ -47,14 +47,14 @@ const Template1 = (props) => {
       id={`${props.index}report`}
       elevation={3}>
       <TemplateHeader
-        primaryColor={"blue"}
+        primaryColor={"green"}
         secondaryColor={"black"}
         bgColor={"white"}
         personalInfo={personalinfo}
         workExperience={workexperience}
       />
       <Container>
-        <TemplateHeading color={"black"} title={"Professional Experience"} />
+        <TemplateHeading color={"green"} title={"Professional Experience"} />
         <ul style={{ paddingBottom: 10 }}>
           {workexperience.map((experience, index) => {
             return (
@@ -65,9 +65,9 @@ const Template1 = (props) => {
             );
           })}
         </ul>
-        <TemplateHeading color={"black"} title={"Education"} />
+        <TemplateHeading color={"green"} title={"Education"} />
         <TemplateEducationComponent education={educationinfo} />
-        <TemplateHeading color={"black"} title={"Key Skills"} />
+        <TemplateHeading color={"green"} title={"Key Skills"} />
         <ul style={{ marginBottom: 10 }}>
           {skills.map((skill, index) => {
             return <TemplateKeySkillComponent key={index} skill={skill} />;
@@ -78,4 +78,4 @@ const Template1 = (props) => {
   );
 };
 
-export default Template1;
+export default Template4;
