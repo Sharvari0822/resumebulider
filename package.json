@@ -2,7 +2,7 @@
   "name": "project-resumeulider",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Sharvari0822.github.io/resumebulider",
+  "homepage": "https://github.com/Sharvari0822/resumebulider.git",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "gh": "^2.8.9",
     "gh-pages": "^5.0.0",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",
@@ -27,8 +28,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
